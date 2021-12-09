@@ -1,0 +1,21 @@
+﻿<body ontouchstart="">
+    <button onclick="showmessage('页面按钮点击')" type="button" class="mui-btn mui-btn-primary mui-btn-outlined">弹出</button>
+    <button onclick="ShowAdMessage()" type="button" class="mui-btn mui-btn-primary mui-btn-outlined">调用后台C#</button>
+    <p id="pp"></p>
+    <script>
+        //定义一个JS方法,并返回一个字符串
+        function showmessage(message) {
+            document.getElementById("pp").innerHTML = message
+  
+               
+
+                return "JS反馈"
+            }
+
+            function ShowAdMessage() {
+                // alert(wv);
+                AndroidMethod.ShowToast("这里是JS调用后台的C#代码");
+
+            }
+    </script>
+</body>
